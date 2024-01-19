@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <div class="navbox">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Logo de nuestra plataforma">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Cerrar Sesión</a></li>
+                    <li><a href="ayuda.html">Ayuda/Contacto</a></li>
+                    <li><a href="quienesomos.html">¿Quiénes somos?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <!-- Contenedor de productos -->
+            <div class="product-container">
+                <!-- Celda del producto 1 -->
+                <div class="product-cell">
+                    <form class=".investment-form" id="form1" onsubmit="redirectToPage(1); return false;">
+                        <img src="./images/PasarelaInicio/avatar.png" alt="Producto 1" class="product-image">
+                        <div class="product-price">Precio: 70€</div>
+                        <input type="hidden" name="id" value="1">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar valor">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 2 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form2" onsubmit="redirectToPage(2); return false;">
+                        <img src="./images/PasarelaInicio/PS5.png" alt="Producto 2" class="product-image">
+                        <div class="product-price">Precio: 499€</div>
+                        <input type="hidden" name="id" value="2">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar cantidad">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 3 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form3" onsubmit="redirectToPage(3); return false;">
+                        <img src="./images/PasarelaInicio/PS4.png" alt="Producto 3" class="product-image">
+                        <div class="product-price">Precio: 300€</div>
+                        <input type="hidden" name="id" value="3">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar cantidad">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 4 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form4" onsubmit="redirectToPage(4); return false;">
+                        <img src="./images/PasarelaInicio/psplus.png" alt="Producto 4" class="product-image">
+                        <div class="product-price">Precio: 70€</div>
+                        <input type="hidden" name="id" value="4">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar cantidad">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 5 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form5" onsubmit="redirectToPage(5); return false;">
+                        <img src="./images/PasarelaInicio/tlou.png" alt="Producto 5" class="product-image">
+                        <div class="product-price">Precio: 60€</div>
+                        <input type="hidden" name="id" value="5">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar cantidad">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 6 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form6" onsubmit="redirectToPage(6); return false;">
+                        <img src="./images/PasarelaInicio/gow.png" alt="Producto 6" class="product-image">
+                        <div class="product-price">Precio: 60€</div>
+                        <input type="hidden" name="id" value="6">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar valor">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 7 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form7" onsubmit="redirectToPage(7); return false;">
+                        <img src="./images/PasarelaInicio/howg.png" alt="Producto 7" class="product-image">
+                        <div class="product-price">Precio: 40€</div>
+                        <input type="hidden" name="id" value="7">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar valor">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 8 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form8" onsubmit="redirectToPage(8); return false;">
+                        <img src="./images/PasarelaInicio/eafc24.png" alt="Producto 8" class="product-image">
+                        <div class="product-price">Precio: 50€</div>
+                        <input type="hidden" name="id" value="8">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar valor">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            
+                <!-- Celda del producto 9 -->
+                <div class="product-cell">
+                    <form class="investment-form" id="form9" onsubmit="redirectToPage(9); return false;">
+                        <img src="./images/PasarelaInicio/mando.png" alt="Producto 9" class="product-image">
+                        <div class="product-price">Precio: 70€</div>
+                        <input type="hidden" name="id" value="9">
+                        <input type="number" name="cantidad_invertida" class="investment-input" placeholder="Ingresar valor">
+                        <button type="submit" class="investment-button">Invertir</button>
+                    </form>
+                </div>
+            </div>
+                <!-- Agrega más celdas de productos según sea necesario -->
+        </section>
+    </main>
+    <script>
+    function redirectToPage(productId) {
+        // Obtiene el valor ingresado en el input
+        var cantidadInvertida = document.getElementById('form' + productId).elements.cantidad_invertida.value;
+
+        // Validación simple para asegurarse de que la cantidad ingresada sea un número entero positivo
+        if (cantidadInvertida && /^\d+$/.test(cantidadInvertida)) {
+            // Construye la URL de la página a la que deseas redirigir, aquí asumo que la página se llama "otra_pagina.html"
+            var redirectTo = 'inversion.html?producto=' + productId + '&cantidad=' + cantidadInvertida;
+
+            // Redirige a la nueva página
+            window.location.href = redirectTo;
+        } else {
+            // Si la cantidad no es válida, puedes mostrar un mensaje de error o realizar alguna otra acción
+            alert('Ingrese una cantidad válida.');
+        }
+    }
+    </script>
+</body>
+<footer>
+    <p>&copy; 2024 IJ VideoFundGames. Todos los derechos reservados.</p>
+</footer>
+</html>

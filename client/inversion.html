@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversión</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #thank-you-message {
+            text-align: center;
+            margin-top: 150px;
+            font-family: Arial, sans-serif;
+            color: #0008fa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbox">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Logo de nuestra plataforma">
+            </a>
+        </div>
+    </header>
+
+    <div id="info-container">
+        <p id="product-info"></p>
+        <p id="amount-info"></p>
+    </div>
+
+    <div id="thank-you-message">
+        <h1>Muchas gracias por tu colaboración</h1>
+        <p>Desde IJ VideoFund Games te invitamos a formar parte de nuestro grupo de Telegram para mantenerte actualizado y ver cuando esos niños reciban el producto ;)</p>
+        <p><a href="https://t.me/+3ugM3d4ySwhmYTA0 style="color: #ADD8E6;">Únete a nuestro telegram</a></p>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get('producto');
+        const cantidadInvertida = params.get('cantidad');
+
+        if (productId && cantidadInvertida) {
+            document.getElementById('product-info').textContent = 'Producto: ' + productId;
+            document.getElementById('amount-info').textContent = 'Cantidad Invertida: ' + cantidadInvertida + ' euros';
+            fetch('http://127.0.0.1:3000/invertir', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    producto_id: productId,
+                    cantidad_invertida: cantidadInvertida
+                })
+            })
+            .then(response => response.json())
+            .then(data => console.log('Respuesta del servidor:', data))
+            .catch(error => console.error('Error:', error));
+        } else {
+            // Si no se proporcionan los parámetros esperados, puedes redirigir a una página de error o realizar otra acción
+            window.location.href = 'error.html';
+        }
+    </script>
+
+</body>
+<footer>
+    <p>&copy; 2024 IJ VideoFundGames. Todos los derechos reservados.</p>
+</footer>
+</html>

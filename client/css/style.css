@@ -1,0 +1,292 @@
+.navbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d1d1d;
+    padding: 10px;
+    text-align: center;
+}
+section:last-of-type {
+    margin-bottom: 100px; /* Ajusta este valor según la altura de tu footer */
+}
+body{
+    background-color: #000000;
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+}
+section {
+    border-top: 1px solid #326df4; /* Crea una línea en la parte superior de cada sección */
+    padding-top: 20px; /* Espacio entre el borde y el contenido de la sección */
+    margin-top: 20px; /* Espacio entre secciones */
+    margin-bottom: 50px;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #030bfd; /* Este es el azul claro */
+}
+
+a:hover {
+    color: #f6fdff; /* Mantiene el color al pasar el ratón por encima */
+    text-decoration: underline; /* Opcional: subraya el enlace al pasar el ratón por encima */
+}
+.navbox ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbox ul li {
+    margin-right: 10px;
+}
+
+.navbox ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.navbox ul li a:hover {
+    color: #326df4;
+}
+
+.login-dropdown {
+    display: none;
+    position: fixed; /* Cambiado de absolute a fixed */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    z-index: 2; /* Asegúrate de que esté por encima de otros elementos */
+}
+#loginForm {
+    width: 300px; /* Define un ancho máximo */
+    margin: auto; /* Esto puede ayudar a centrar en ciertos casos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+#loginForm input,
+#loginForm button {
+    width: 80%; /* Ajusta el ancho según tus preferencias */
+    padding: 10px;
+    margin: 5px 0; /* Espaciado entre elementos */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginForm button {
+    background-color: #326df4; /* Color de fondo del botón */
+    color: white;
+    cursor: pointer;
+}
+#loginForm, #registerForm {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+#loginForm input, #loginForm button,
+#registerForm input, #registerForm button {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginForm button, #registerForm button {
+    background-color: #326df4;
+    color: white;
+    cursor: pointer;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: red; /* Color de fondo para hacerlo visible */
+    color: white; /* Color del texto */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Opcional: Cambiar el estilo al pasar el mouse */
+.close-btn:hover {
+    color: red;
+}
+
+.foto-pasarela {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten según el ancho del contenedor */
+}
+
+.foto-pasarela img {
+    max-width: 100%; /* Asegura que las imágenes no sean más grandes que el contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    margin: 5px; /* Espaciado entre imágenes */
+}
+
+
+
+.foto-pasarela img:hover {
+    transform: scale(1.05);
+    border-color: #333;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1d1d1d;
+    padding: 10px;
+    text-align: center;
+
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir celdas uniformemente en filas */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuir celdas uniformemente en filas */
+}
+
+.product-cell {
+    width: calc(33.33% - 20px); /* Tamaño de celda (ajusta según tus necesidades) */
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho */
+    flex: 0 0 calc(33.33% - 20px); /* Evita que las celdas crezcan para llenar el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinea elementos verticalmente */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Estilos CSS para el formulario de inversión */
+.investment-form {
+    display: flex;
+    flex-direction: column; /* Alinea el campo de valor y el botón en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-top: auto; /* Coloca la caja de inversión en la parte inferior */
+}
+
+.investment-input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 5px;
+    margin-bottom: 5px; /* Espaciado entre el campo de valor y el botón */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho */
+}
+
+.investment-button {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 5px 10px;
+    background-color: #326df4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup p {
+    margin: 0;
+}
+.contenedor-sobre-nosotros {
+    border: 2px solid #326df4; /* Estilo del borde */
+    padding: 20px; /* Relleno alrededor del contenido */
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.sobre-nosotros {
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-nosotros p {
+    text-align: left; /* Alinea el texto a la izquierda dentro del cuadro */
+}
+
+.imagen-debajo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+
+.imagen-debajo img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.contenedor-quienes-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+}
+
+.quien-somos-item {
+    text-align: center;
+}
+
+.quien-somos-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0; /* Ajusta según sea necesario */
+}
+
+.quien-somos-item p {
+    color: #fff;
+}
+.contenedor-seccion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto-logo {
+    display: flex;
+    justify-content: flex-start; /* Alinea la imagen a la izquierda */
+}
+
+.foto-logo img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
